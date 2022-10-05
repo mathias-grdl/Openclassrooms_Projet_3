@@ -1,5 +1,7 @@
-$logo_and_title_fonts : 'Shrikhand',sans-serif;
-$text_fonts :'Roboto',sans-serif;
+$logo_and_title_fonts : 'Shrikhand',
+sans-serif;
+$text_fonts :'Roboto',
+sans-serif;
 
 $color_primary : #9356DC;
 $color_secondary : #FF79DA;
@@ -144,45 +146,44 @@ header {
 
     a {
       color: black;
-  
-    .cards_restaurants {
-      background-color: #f2f2f2;
-      border-radius: 15px;
-      box-shadow: -1px 5px 15px -2px #9E9E9E;
-      margin-bottom: 15px;
 
-      img {
-        width: 100%;
-        height: 150px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
+      .cards_restaurants {
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        box-shadow: -1px 5px 15px -2px #9E9E9E;
+        margin-bottom: 15px;
 
-      .all_cards {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 15px;
-
-        .cards_text {
-          display: inline-flex;
-          flex-direction: column;
-          padding: 10px 15px;
-
-          h5 {
-            font-size: 17px;
-          }
+        img {
+          width: 100%;
+          height: 150px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
         }
 
-        i {
-          font-size: 18px;
+        .all_cards {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-right: 15px;
+
+          .cards_text {
+            display: inline-flex;
+            flex-direction: column;
+            padding: 10px 15px;
+
+            h5 {
+              font-size: 17px;
+            }
+          }
+
+          i {
+            font-size: 18px;
+          }
         }
       }
     }
   }
 }
-}
-
 
 footer {
   background-color: #363636;
@@ -207,11 +208,9 @@ footer {
   }
 }
 
-
 // --------------------- LES MENUS ---------------------
 // --------------------- LES MENUS ---------------------
 // --------------------- LES MENUS ---------------------
-
 .background_menu {
   background-image: url(../images/restaurants/a_la_francaise.jpg);
   background-size: cover;
@@ -240,15 +239,13 @@ footer {
       text-transform: uppercase;
       margin: 20px 0px;
       position: relative;
-    
+
       &::before {
         content: "";
         border-bottom: 2px solid $color_green;
         padding: 0px 20px;
         position: absolute;
         top: 20px;
-
-        
       }
     }
   }
