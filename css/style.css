@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  margin: 20px 0px 10px;
+}
+
+#search #localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+  padding: 20px 0px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+#search #localisation i {
+  margin-right: 20px;
+}
+#search #booking {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  padding-bottom: 60px;
+}
+#search #booking h1 {
+  font-size: 28px;
+  margin: 30px 50px 0px;
+  font-weight: bolder;
+}
+#search #booking h3 {
+  font-size: 17px;
+  color: #8b8b8b;
+  margin: 20px 40px 30px;
+}
+#search #booking a {
+  padding: 17px;
+  margin: 0px 80px;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: -1px 5px 15px -2px #9E9E9E;
+  color: white;
+  font-size: 15px;
+}
+
+#fonctionnement {
+  margin: 40px 30px;
+}
+#fonctionnement #cards_list_operation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#fonctionnement #cards_list_operation .cards_operation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+  margin: 10px 0px;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  box-shadow: -1px 5px 15px -2px #9E9E9E;
+  width: 260px;
+}
+#fonctionnement #cards_list_operation .cards_operation:hover {
+  background-color: rgba(146, 86, 220, 0.1725490196);
+}
+#fonctionnement #cards_list_operation .cards_operation:hover i {
+  color: #9356DC;
+}
+#fonctionnement #cards_list_operation .cards_operation p {
+  background-color: #9356DC;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: white;
+  margin-left: -45px;
+}
+#fonctionnement #cards_list_operation .cards_operation i {
+  margin: 0px 20px;
+}
+#fonctionnement #cards_list_operation .cards_operation h4 {
+  font-size: 15px;
+}
+
+#restaurants {
+  background-color: #e9e9e9;
+  padding: 50px 0px 25px;
+}
+#restaurants h2 {
+  margin-left: 30px;
+}
+#restaurants #cards_list_restaurants {
+  margin: 30px 30px;
+}
+#restaurants #cards_list_restaurants a {
+  color: black;
+}
+#restaurants #cards_list_restaurants a .cards_restaurants {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  box-shadow: -1px 5px 15px -2px #9E9E9E;
+  margin-bottom: 15px;
+}
+#restaurants #cards_list_restaurants a .cards_restaurants img {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#restaurants #cards_list_restaurants a .cards_restaurants .all_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+#restaurants #cards_list_restaurants a .cards_restaurants .all_cards .cards_text {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+#restaurants #cards_list_restaurants a .cards_restaurants .all_cards .cards_text h5 {
+  font-size: 17px;
+}
+#restaurants #cards_list_restaurants a .cards_restaurants .all_cards i {
+  font-size: 18px;
+}
+
+footer {
+  background-color: #363636;
+  color: white;
+  padding: 20px;
+}
+footer h5 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
+}
+footer nav {
+  padding: 20px 0px;
+}
+footer nav li {
+  padding-bottom: 10px;
+}
+footer nav li a {
+  color: white;
+}
+
+.background_menu {
+  background-image: url(../images/restaurants/a_la_francaise.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.menu {
+  background-color: rgb(247, 247, 247);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -25px;
+  padding: 25px 25px;
+}
+.menu .menu_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Shrikhand", sans-serif;
+}
+.menu .menu_description p {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  position: relative;
+}
+.menu .menu_description p::before {
+  content: "";
+  border-bottom: 2px solid #99E2D0;
+  padding: 0px 20px;
+  position: absolute;
+  top: 20px;
+}
+.menu .menu_card {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  margin: 20px 0px;
+  box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.582);
+  width: 100%;
+}
+.menu .menu_card .menu_text h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu .menu_card .menu_text p {
+  text-transform: none;
+}
+.menu .menu_card .menu_prix p {
+  font-weight: bold;
+  margin: 0px 0px;
+}
+.menu a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 50px;
+  padding: 15px 60px;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: -1px 5px 15px -2px #9E9E9E;
+  color: white;
+  font-size: 15px;
+}/*# sourceMappingURL=style.css.map */

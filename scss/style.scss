@@ -1,0 +1,299 @@
+$logo_and_title_fonts : 'Shrikhand',sans-serif;
+$text_fonts :'Roboto',sans-serif;
+
+$color_primary : #9356DC;
+$color_secondary : #FF79DA;
+$color_green : #99E2D0;
+$color_grey_text : #8b8b8b;
+$color_white : white;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $text_fonts;
+}
+
+img {
+  object-fit: cover;
+}
+
+// ---------
+
+header {
+  display: flex;
+  justify-content: center;
+
+  img {
+    margin: 20px 0px 10px;
+  }
+}
+
+#search {
+  #localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9e9;
+    padding: 20px 0px;
+    font-size: 18px;
+    font-family: $text_fonts;
+
+    i {
+      margin-right: 20px;
+    }
+  }
+
+  #booking {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: $text_fonts;
+    background-color: #f5f5f5;
+    padding-bottom: 60px;
+
+    h1 {
+      font-size: 28px;
+      margin: 30px 50px 0px;
+      font-weight: bolder;
+    }
+
+    h3 {
+      font-size: 17px;
+      color: $color_grey_text;
+      margin: 20px 40px 30px;
+    }
+
+    a {
+      padding: 17px;
+      margin: 0px 80px;
+      border-radius: 30px;
+      background: linear-gradient($color_secondary, $color_primary);
+      box-shadow: -1px 5px 15px -2px #9E9E9E;
+      color: white;
+      font-size: 15px;
+    }
+  }
+}
+
+#fonctionnement {
+  margin: 40px 30px;
+
+  #cards_list_operation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .cards_operation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0px;
+      margin: 10px 0px;
+      background-color: #f2f2f2;
+      border-radius: 30px;
+      box-shadow: -1px 5px 15px -2px #9E9E9E;
+      width: 260px;
+
+      &:hover {
+        background-color: #9256dc2c;
+
+        i {
+          color: $color_primary;
+        }
+      }
+
+      p {
+        background-color: $color_primary;
+        padding: 5px 10px;
+        border-radius: 50%;
+        color: white;
+        margin-left: -45px;
+      }
+
+      i {
+        margin: 0px 20px;
+      }
+
+      h4 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+#restaurants {
+  background-color: #e9e9e9;
+  padding: 50px 0px 25px;
+
+  h2 {
+    margin-left: 30px;
+  }
+
+  #cards_list_restaurants {
+    margin: 30px 30px;
+
+    a {
+      color: black;
+  
+    .cards_restaurants {
+      background-color: #f2f2f2;
+      border-radius: 15px;
+      box-shadow: -1px 5px 15px -2px #9E9E9E;
+      margin-bottom: 15px;
+
+      img {
+        width: 100%;
+        height: 150px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+
+      .all_cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 15px;
+
+        .cards_text {
+          display: inline-flex;
+          flex-direction: column;
+          padding: 10px 15px;
+
+          h5 {
+            font-size: 17px;
+          }
+        }
+
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+}
+
+
+footer {
+  background-color: #363636;
+  color: white;
+  padding: 20px;
+
+  h5 {
+    font-family: $logo_and_title_fonts;
+    font-size: 20px;
+  }
+
+  nav {
+    padding: 20px 0px;
+
+    li {
+      padding-bottom: 10px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+
+// --------------------- LES MENUS ---------------------
+// --------------------- LES MENUS ---------------------
+// --------------------- LES MENUS ---------------------
+
+.background_menu {
+  background-image: url(../images/restaurants/a_la_francaise.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.menu {
+  background-color: rgb(247, 247, 247);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -25px;
+  padding: 25px 25px;
+
+  .menu_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-family: $logo_and_title_fonts;
+  }
+
+  .menu_description {
+    p {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 20px 0px;
+      position: relative;
+    
+      &::before {
+        content: "";
+        border-bottom: 2px solid $color_green;
+        padding: 0px 20px;
+        position: absolute;
+        top: 20px;
+
+        
+      }
+    }
+  }
+
+  .menu_card {
+    background-color: $color_white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    margin: 20px 0px;
+    box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.582);
+    width: 100%;
+
+    .menu_text {
+      h4 {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      p {
+        text-transform: none;
+      }
+    }
+
+    .menu_prix {
+      p {
+        font-weight: bold;
+        margin: 0px 0px;
+      }
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 50px;
+    padding: 15px 60px;
+    border-radius: 30px;
+    background: linear-gradient($color_secondary, $color_primary);
+    box-shadow: -1px 5px 15px -2px #9E9E9E;
+    color: white;
+    font-size: 15px;
+  }
+}
