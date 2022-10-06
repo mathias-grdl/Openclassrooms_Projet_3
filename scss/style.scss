@@ -1,13 +1,4 @@
-$logo_and_title_fonts : 'Shrikhand',
-sans-serif;
-$text_fonts :'Roboto',
-sans-serif;
-
-$color_primary : #9356DC;
-$color_secondary : #FF79DA;
-$color_green : #99E2D0;
-$color_grey_text : #8b8b8b;
-$color_white : white;
+@import "./_variables";
 
 * {
   margin: 0;
@@ -152,12 +143,22 @@ header {
         border-radius: 15px;
         box-shadow: -1px 5px 15px -2px #9E9E9E;
         margin-bottom: 15px;
+        position: relative;
 
         img {
           width: 100%;
           height: 150px;
           border-top-left-radius: 15px;
           border-top-right-radius: 15px;
+        }
+
+        span.card_new {
+          position: absolute;
+          right: 50px;
+          top: 10px;
+          background-color: $color_green;
+          color: red;
+
         }
 
         .all_cards {
@@ -188,7 +189,7 @@ header {
 footer {
   background-color: #363636;
   color: white;
-  padding: 20px;
+  padding: 20px; 
 
   h5 {
     font-family: $logo_and_title_fonts;
@@ -200,7 +201,9 @@ footer {
 
     li {
       padding-bottom: 10px;
-
+      .icons-footer {
+        margin-right: 5px;
+      }
       a {
         color: white;
       }
@@ -294,3 +297,7 @@ footer {
     font-size: 15px;
   }
 }
+
+
+@import "./_fromTablet";
+@import "./_fromPc";
