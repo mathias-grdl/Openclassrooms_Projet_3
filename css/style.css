@@ -160,11 +160,12 @@ header img {
 #restaurants #cards_list_restaurants a .cards_restaurants .all_cards .cards_text h5 {
   font-size: 17px;
 }
-#restaurants #cards_list_restaurants a .cards_restaurants .all_cards i {
-  font-size: 18px;
-}
-#restaurants #cards_list_restaurants a .cards_restaurants .all_cards i:hover {
-  font-weight: 900;
+#restaurants #cards_list_restaurants a .cards_restaurants .all_cards .fa-heart:hover::before {
+  font-weight: bold;
+  cursor: pointer;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
