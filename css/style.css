@@ -58,56 +58,58 @@ header img {
 }
 #search #booking a {
   padding: 17px;
-  margin: 0px 80px;
+  margin: 0px 19%;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: -1px 5px 15px -2px #9E9E9E;
   color: white;
   font-size: 15px;
 }
+#search #booking a:hover {
+  transform: scale(1.01);
+}
 
 #fonctionnement {
   margin: 40px 30px;
+  counter-reset: pts;
 }
-#fonctionnement #cards_list_operation {
+#fonctionnement ol {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20px;
+  list-style-type: none;
 }
-#fonctionnement #cards_list_operation .cards_operation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 0px;
+#fonctionnement ol li {
+  padding: 25px 0px;
   margin: 10px 0px;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   border-radius: 30px;
   box-shadow: -1px 5px 15px -2px #9E9E9E;
-  width: 260px;
+  flex-grow: 1;
 }
-#fonctionnement #cards_list_operation .cards_operation:hover {
-  background-color: rgba(146, 86, 220, 0.1725490196);
-}
-#fonctionnement #cards_list_operation .cards_operation:hover i {
-  color: #9356DC;
-}
-#fonctionnement #cards_list_operation .cards_operation p {
+#fonctionnement ol li::before {
+  content: " " counter(pts);
+  counter-increment: pts;
+  position: relative;
   background-color: #9356DC;
   padding: 5px 10px;
   border-radius: 50%;
   color: white;
-  margin-left: -45px;
+  right: 10px;
 }
-#fonctionnement #cards_list_operation .cards_operation i {
+#fonctionnement ol li:hover {
+  background-color: rgba(146, 86, 220, 0.1725490196);
+  transform: scale(1.01);
+}
+#fonctionnement ol li:hover i {
+  color: #9356DC;
+}
+#fonctionnement ol li i {
   margin: 0px 20px;
-}
-#fonctionnement #cards_list_operation .cards_operation h4 {
-  font-size: 15px;
 }
 
 #restaurants {
-  background-color: #e9e9e9;
+  background-color: #f5f5f5;
   padding: 50px 0px 25px;
 }
 #restaurants h2 {
@@ -126,6 +128,9 @@ header img {
   margin-bottom: 15px;
   position: relative;
 }
+#restaurants #cards_list_restaurants a .cards_restaurants:hover {
+  transform: scale(1.01);
+}
 #restaurants #cards_list_restaurants a .cards_restaurants img {
   width: 100%;
   height: 150px;
@@ -134,10 +139,12 @@ header img {
 }
 #restaurants #cards_list_restaurants a .cards_restaurants span.card_new {
   position: absolute;
-  right: 50px;
-  top: 10px;
+  right: 15px;
+  top: 15px;
+  padding: 5px;
+  border-radius: 2px;
   background-color: #99E2D0;
-  color: red;
+  color: green;
 }
 #restaurants #cards_list_restaurants a .cards_restaurants .all_cards {
   display: flex;
@@ -155,6 +162,9 @@ header img {
 }
 #restaurants #cards_list_restaurants a .cards_restaurants .all_cards i {
   font-size: 18px;
+}
+#restaurants #cards_list_restaurants a .cards_restaurants .all_cards i:hover {
+  font-weight: 900;
 }
 
 footer {
