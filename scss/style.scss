@@ -10,7 +10,9 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+p {
   font-family: $text_fonts;
 }
 
@@ -184,7 +186,6 @@ header {
             }
           }
 
-
           .fa-heart {
             &:hover::before {
               font-weight: bold;
@@ -250,8 +251,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 25px;
-    font-family: $logo_and_title_fonts;
+
+    h2 {
+      font-size: 30px;
+      font-family: $logo_and_title_fonts;
+    }
   }
 
   .menu_description {
@@ -285,7 +289,7 @@ footer {
     .menu_text {
       h4 {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
       }
 
       p {
@@ -318,4 +322,5 @@ footer {
 
 
 @import "./_fromTablet";
-@import "./_fromPc";
+@import "./fromPc";
+@import "./fromPc_xl";

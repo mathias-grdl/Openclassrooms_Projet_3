@@ -1,0 +1,32 @@
+@media screen and (min-width: 1440px) {
+
+    // --------------------- LES MENUS ---------------------
+    // --------------------- LES MENUS ---------------------
+    // --------------------- LES MENUS ---------------------
+
+    .menu {
+        margin: -25px 100px 0px;
+    .all_menu {
+        display: flex;
+        justify-content: space-between;
+
+        .all_parts_menu {
+            display: inline-flex;
+            flex-direction: column;
+            min-width: 32%;
+            justify-content: space-between;
+            margin: 0px 10px;
+
+
+            .menu_list {
+                flex-direction: column;
+               
+
+                .menu_card {
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+}
+}

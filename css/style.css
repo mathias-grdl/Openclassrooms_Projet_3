@@ -8,7 +8,9 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+p {
   font-family: "Roboto", sans-serif;
 }
 
@@ -207,7 +209,9 @@ footer nav li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 25px;
+}
+.menu .menu_title h2 {
+  font-size: 30px;
   font-family: "Shrikhand", sans-serif;
 }
 .menu .menu_description p {
@@ -236,7 +240,7 @@ footer nav li a {
 }
 .menu .menu_card .menu_text h4 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 .menu .menu_card .menu_text p {
   text-transform: none;
@@ -274,6 +278,9 @@ footer nav li a {
   }
 }
 @media screen and (min-width: 992px) {
+  #fonctionnement ol li i {
+    margin: 0px 20px;
+  }
   #restaurants #cards_list_restaurants {
     display: flex;
     justify-content: space-between;
@@ -281,5 +288,37 @@ footer nav li a {
   }
   #restaurants a {
     min-width: 49%;
+  }
+  .menu_list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu_list .menu_card {
+    display: inline-flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 32%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu {
+    margin: -25px 100px 0px;
+  }
+  .menu .all_menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu .all_menu .all_parts_menu {
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 32%;
+    justify-content: space-between;
+    margin: 0px 10px;
+  }
+  .menu .all_menu .all_parts_menu .menu_list {
+    flex-direction: column;
+  }
+  .menu .all_menu .all_parts_menu .menu_list .menu_card {
+    min-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

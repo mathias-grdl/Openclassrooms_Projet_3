@@ -1,15 +1,43 @@
 @media screen and (min-width: 992px) {
 
-    #restaurants {
-
-        #cards_list_restaurants {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+  #fonctionnement {
+    ol {
+      li {
+        i {
+          margin: 0px 20px;
         }
-
-        a {
-            min-width: 49%;
-        }
+      }
     }
+  }
+
+  #restaurants {
+
+    #cards_list_restaurants {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    a {
+      min-width: 49%;
+    }
+  }
+
+  // --------------------- LES MENUS ---------------------
+  // --------------------- LES MENUS ---------------------
+  // --------------------- LES MENUS ---------------------
+
+
+  .menu_list {
+    display: flex;
+    justify-content: space-between;
+
+    .menu_card {
+      display: inline-flex !important;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 32%;
+    }
+  }
+
 }
