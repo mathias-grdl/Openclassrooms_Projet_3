@@ -85,7 +85,6 @@ header img {
   background-color: #f6f6f6;
   border-radius: 30px;
   box-shadow: -1px 5px 15px -2px #9E9E9E;
-  flex-grow: 1;
 }
 #fonctionnement ol li::before {
   content: " " counter(pts);
@@ -258,4 +257,29 @@ footer nav li a {
   box-shadow: -1px 5px 15px -2px #9E9E9E;
   color: white;
   font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  #fonctionnement ol {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #fonctionnement ol li {
+    margin: 0px 10px;
+    min-width: 30%;
+  }
+  #fonctionnement ol li i {
+    margin: 0px 7px 0px -5px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #restaurants #cards_list_restaurants {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #restaurants a {
+    min-width: 49%;
+  }
 }/*# sourceMappingURL=style.css.map */

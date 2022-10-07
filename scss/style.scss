@@ -97,7 +97,6 @@ header {
       background-color: #f6f6f6;
       border-radius: 30px;
       box-shadow: -1px 5px 15px -2px #9E9E9E;
-      flex-grow: 1;
 
       &::before {
         content: " "counter(pts);

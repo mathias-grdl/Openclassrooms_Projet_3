@@ -1,3 +1,19 @@
 @media screen and (min-width: 768px) {
 
+  #fonctionnement {
+    ol {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      li {
+        margin: 0px 10px;
+        min-width: 30%;
+
+        i {
+          margin: 0px 7px 0px -5px;
+        }
+      }
+    }
+  }
 }
