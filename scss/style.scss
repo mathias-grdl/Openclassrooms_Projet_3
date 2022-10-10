@@ -1,4 +1,5 @@
 @import "./_variables";
+@import "./mixins";
 
 * {
   margin: 0;
@@ -33,9 +34,7 @@ header {
 
 #search {
   #localisation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include d_flex(flex, center, center);
     background-color: #e9e9e9;
     padding: 20px 0px;
     font-size: 18px;
@@ -47,10 +46,7 @@ header {
   }
 
   #booking {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    @include d_flex(flex, center, center, column);
     font-family: $text_fonts;
     background-color: #f5f5f5;
     padding-bottom: 60px;
@@ -113,7 +109,6 @@ header {
 
       &:hover {
         background-color: #9256dc2c;
-        transform: scale(1.01);
 
         i {
           color: $color_primary;
@@ -171,9 +166,7 @@ header {
         }
 
         .all_cards {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          @include d_flex(flex, space-between, center);
           margin-right: 15px;
 
           .cards_text {
@@ -182,7 +175,7 @@ header {
             padding: 10px 15px;
 
             h5 {
-              font-size: 17px;
+              font-size: 20px;
             }
           }
 
@@ -248,9 +241,7 @@ footer {
   padding: 25px 25px;
 
   .menu_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include d_flex(flex, space-between, center);
 
     h2 {
       font-size: 30px;
@@ -276,11 +267,9 @@ footer {
   }
 
   .menu_card {
+    @include d_flex(flex, space-between, flex-end);
     background-color: $color_white;
     border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     padding: 10px;
     margin: 20px 0px;
     box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.582);
@@ -306,10 +295,7 @@ footer {
   }
 
   a {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    @include d_flex(flex, center, center, column);
     margin: 30px 50px;
     padding: 15px 60px;
     border-radius: 30px;
