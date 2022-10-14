@@ -1,0 +1,78 @@
+.background_menu {
+  background-image: url(../images/restaurants/a_la_francaise.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.menu {
+  background-color: rgb(247, 247, 247); 
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -25px;
+  padding: 25px 25px;
+
+  .menu_title {
+    @include d_flex(flex, space-between, center);
+      h2 {
+        font-family: $logo_and_title_fonts;
+      }
+  }
+
+  .menu_description {
+    p {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 20px 0px;
+      position: relative;
+
+      &::before {
+        content: "";
+        border-bottom: 2px solid $color_green;
+        padding: 0px 20px;
+        position: absolute;
+        top: 20px;
+      }
+    }
+  }
+
+  .menu_card {
+    @include d_flex(flex, space-between, flex-end);
+    background-color: $color_white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px 0px;
+    box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.582);
+    width: 100%;
+    animation: menu 0.8s ease-out;
+    
+    .menu_text {
+      h3 {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      p {
+        text-transform: none;
+      }
+    }
+
+    .menu_prix {
+      p {
+        font-weight: bold;
+        margin: 0px 0px;
+      }
+    }
+  }
+
+  a {
+    @include d_flex(flex, center, center, column);
+    margin: 30px 50px;
+    padding: 15px 60px;
+    border-radius: 30px;
+    background: linear-gradient($color_secondary, $color_primary);
+    box-shadow: -1px 5px 15px -2px #9E9E9E;
+    color: white;
+    font-size: 15px;
+  }
+}
