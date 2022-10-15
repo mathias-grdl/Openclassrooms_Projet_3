@@ -107,10 +107,12 @@ header h1 {
   background-color: #f5f5f5;
   padding-bottom: 60px;
 }
-#search #booking h1 {
-  margin: 30px 50px 0px;
+#search #booking .booking_title {
+  margin: 30px 40px 0px;
   font-weight: bolder;
   text-align: center;
+  font-size: 30px;
+  color: black;
 }
 #search #booking p {
   color: #8b8b8b;
