@@ -10,7 +10,7 @@
 }
 
 .menu {
-  background-color: rgb(247, 247, 247); 
+  background-color: rgb(247, 247, 247);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -25px;
@@ -18,9 +18,10 @@
 
   .menu_title {
     @include d_flex(flex, space-between, center);
-      h2 {
-        font-family: $logo_and_title_fonts;
-      }
+
+    h2 {
+      font-family: $logo_and_title_fonts;
+    }
   }
 
   .menu_description {
@@ -41,30 +42,72 @@
   }
 
   .menu_card {
-    @include d_flex(flex, space-between, flex-end);
+    @include d_flex(flex, space-between, center);
     background-color: $color_white;
     border-radius: 15px;
-    padding: 10px;
     margin: 20px 0px;
     box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.582);
     width: 100%;
     animation: menu 0.8s ease-out;
-    
+    overflow: hidden;
+
+
     .menu_text {
+      margin-left: 10px;
+      overflow: hidden;
       h3 {
         font-weight: bold;
         font-size: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
 
       p {
         text-transform: none;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
     }
 
     .menu_prix {
+      display: inline-flex;
+
       p {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         font-weight: bold;
-        margin: 0px 0px;
+        margin: 0px 10px 10px 0px;
+      }
+
+      .menu_card_check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color_green;
+        padding: 20px 5px;
+        margin-right: -55px;
+        width: 55px;
+        transition: margin-right 0.5s;
+        i::before {
+          padding: 5px;
+          border: 1px solid $color_green;
+          border-radius: 50%;
+          background-color: white;
+          color: $color_green;
+        }
+
+      }
+    }
+
+    &:hover {
+      .menu_card_check {
+        margin-right: 0px;
+      }
+      i {
+        animation: rotate_validation 0.5s ease-out;
       }
     }
   }

@@ -18,6 +18,22 @@
     transform: translateY(0px);
   }
 }
+@-webkit-keyframes rotate_validation {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate_validation {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .background_menu {
   background-image: url(../images/restaurants/a_la_francaise.jpg);
   background-size: cover;
@@ -57,27 +73,67 @@
 .menu .menu_card {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: row;
   background-color: white;
   border-radius: 15px;
-  padding: 10px;
   margin: 20px 0px;
   box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.582);
   width: 100%;
   -webkit-animation: menu 0.8s ease-out;
           animation: menu 0.8s ease-out;
+  overflow: hidden;
+}
+.menu .menu_card .menu_text {
+  margin-left: 10px;
+  overflow: hidden;
 }
 .menu .menu_card .menu_text h3 {
   font-weight: bold;
   font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu .menu_card .menu_text p {
   text-transform: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu .menu_card .menu_prix {
+  display: inline-flex;
 }
 .menu .menu_card .menu_prix p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-weight: bold;
-  margin: 0px 0px;
+  margin: 0px 10px 10px 0px;
+}
+.menu .menu_card .menu_prix .menu_card_check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  padding: 20px 5px;
+  margin-right: -55px;
+  width: 55px;
+  transition: margin-right 0.5s;
+}
+.menu .menu_card .menu_prix .menu_card_check i::before {
+  padding: 5px;
+  border: 1px solid #99E2D0;
+  border-radius: 50%;
+  background-color: white;
+  color: #99E2D0;
+}
+.menu .menu_card:hover .menu_card_check {
+  margin-right: 0px;
+}
+.menu .menu_card:hover i {
+  -webkit-animation: rotate_validation 0.5s ease-out;
+          animation: rotate_validation 0.5s ease-out;
 }
 .menu a {
   display: flex;
