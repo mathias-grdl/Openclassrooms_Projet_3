@@ -18,6 +18,16 @@
     transform: translateY(0px);
   }
 }
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +39,7 @@
 
 h1 {
   font-size: 28px;
+  font-family: "Shrikhand", sans-serif;
 }
 
 h2 {
@@ -48,7 +59,7 @@ header {
   display: flex;
   justify-content: center;
 }
-header img {
+header h1 {
   margin: 20px 0px 10px;
 }
 
@@ -197,6 +208,9 @@ footer {
   color: white;
   padding: 20px;
 }
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+}
 footer nav {
   padding: 20px 0px;
 }
@@ -210,6 +224,16 @@ footer nav li a {
   color: white;
 }
 
+@keyframes menu {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .background_menu {
   background-image: url(../images/restaurants/a_la_francaise.jpg);
   background-size: cover;
@@ -229,6 +253,9 @@ footer nav li a {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+.menu .menu_title h2 {
+  font-family: "Shrikhand", sans-serif;
 }
 .menu .menu_description p {
   font-size: 18px;

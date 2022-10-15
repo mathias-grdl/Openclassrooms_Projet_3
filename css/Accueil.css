@@ -29,10 +29,15 @@
 
 h1 {
   font-size: 28px;
+  font-family: "Shrikhand", sans-serif;
 }
 
 h2 {
   font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 img {
@@ -44,7 +49,7 @@ header {
   display: flex;
   justify-content: center;
 }
-header img {
+header h1 {
   margin: 20px 0px 10px;
 }
 
@@ -56,7 +61,6 @@ header img {
   background-color: #e9e9e9;
   padding: 20px 0px;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
 }
 #search #localisation i {
   margin-right: 20px;
@@ -66,7 +70,6 @@ header img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
   padding-bottom: 60px;
 }
@@ -197,7 +200,6 @@ footer {
 }
 footer h3 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 20px;
 }
 footer nav {
   padding: 20px 0px;
@@ -210,64 +212,4 @@ footer nav li .icons-footer {
 }
 footer nav li a {
   color: white;
-}
-
-@media screen and (min-width: 779px) {
-  #fonctionnement ol {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #fonctionnement ol li {
-    margin: 0px 10px;
-    min-width: 30%;
-  }
-  #fonctionnement ol li i {
-    margin: 0px 7px 0px -5px;
-  }
-}
-@media screen and (min-width: 992px) {
-  #fonctionnement ol li i {
-    margin: 0px 20px;
-  }
-  #restaurants #cards_list_restaurants {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  #restaurants a {
-    min-width: 49%;
-  }
-  .menu_list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu_list .menu_card {
-    display: inline-flex !important;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 32%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .menu {
-    margin: -25px 100px 0px;
-  }
-  .menu .all_menu {
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu .all_menu .menu_all_parts {
-    display: inline-flex;
-    flex-direction: column;
-    min-width: 32%;
-    justify-content: space-between;
-    margin: 0px 10px;
-  }
-  .menu .all_menu .menu_all_parts .menu_list {
-    flex-direction: column;
-  }
-  .menu .all_menu .menu_all_parts .menu_list .menu_card {
-    min-width: 100%;
-  }
-}/*# sourceMappingURL=Accueil.css.map */
+}/*# sourceMappingURL=accueil.css.map */

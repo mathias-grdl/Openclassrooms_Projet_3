@@ -1,3 +1,7 @@
+@import "./_variables";
+@import "./mixins";
+@import "./animations.scss";
+
 .background_menu {
   background-image: url(../images/restaurants/a_la_francaise.jpg);
   background-size: cover;

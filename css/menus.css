@@ -38,6 +38,9 @@
   align-items: center;
   flex-direction: row;
 }
+.menu .menu_title h2 {
+  font-family: "Shrikhand", sans-serif;
+}
 .menu .menu_description p {
   font-size: 18px;
   text-transform: uppercase;

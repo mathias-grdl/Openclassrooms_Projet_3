@@ -1,14 +1,19 @@
+@import "./_variables";
+@import "./mixins";
+@import "./animations.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none;
+  list-style-type: none; 
   font-family: $text_fonts;
 }
 
 h1 {
   font-size: 28px;
+  font-family: $logo_and_title_fonts;
 }
 
 h2 {
@@ -30,7 +35,7 @@ header {
   display: flex;
   justify-content: center;
 
-  img {
+  h1 {
     margin: 20px 0px 10px;
   }
 }
