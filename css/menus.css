@@ -23,7 +23,7 @@
     transform: rotate(-270deg);
   }
   100% {
-    transform: rotate(0deg);
+    opacity: 1;
   }
 }
 @keyframes rotate_validation {
@@ -31,7 +31,33 @@
     transform: rotate(-270deg);
   }
   100% {
-    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0;
+    font-weight: 400;
+  }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+    font-weight: 400;
+  }
+  100% {
+    opacity: 1;
+    font-weight: 900;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 .background_menu {
