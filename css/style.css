@@ -329,6 +329,15 @@ footer nav li a {
 .menu .menu_title h2 {
   font-family: "Shrikhand", sans-serif;
 }
+.menu .fa-heart:hover::before {
+  -webkit-animation: heart 0.8s;
+          animation: heart 0.8s;
+  cursor: pointer;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .menu .menu_description p {
   font-size: 18px;
   text-transform: uppercase;

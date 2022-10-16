@@ -35,29 +35,21 @@
   }
 }
 @-webkit-keyframes heart {
-  0% {
+  from {
     opacity: 0;
     font-weight: 400;
   }
-  100% {
+  to {
     opacity: 1;
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 @keyframes heart {
-  0% {
+  from {
     opacity: 0;
     font-weight: 400;
   }
-  100% {
+  to {
     opacity: 1;
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 .background_menu {
@@ -82,6 +74,15 @@
 }
 .menu .menu_title h2 {
   font-family: "Shrikhand", sans-serif;
+}
+.menu .fa-heart:hover::before {
+  -webkit-animation: heart 0.8s;
+          animation: heart 0.8s;
+  cursor: pointer;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu .menu_description p {
   font-size: 18px;

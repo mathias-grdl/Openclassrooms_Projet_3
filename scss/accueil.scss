@@ -187,13 +187,7 @@ header {
 
           .fa-heart {
             &:hover::before {
-              animation: heart 0.8s;
-              cursor: pointer;
-              font-weight: bold;
-              // dégradé de couleur texte :
-              background: -webkit-linear-gradient($color_primary, $color_secondary);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
+              @include anim_heart;
             }
           }
         }

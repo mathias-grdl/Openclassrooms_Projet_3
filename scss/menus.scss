@@ -24,6 +24,12 @@
     }
   }
 
+  .fa-heart {
+    &:hover::before {
+      @include anim_heart;
+    }
+  }
+
   .menu_description {
     p {
       font-size: 18px;
