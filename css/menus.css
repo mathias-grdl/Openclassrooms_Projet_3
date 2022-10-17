@@ -58,7 +58,7 @@
   }
   100% {
     opacity: 0;
-    z-index: -10;
+    visibility: hidden;
   }
 }
 @keyframes background_loader {
@@ -67,27 +67,39 @@
   }
   100% {
     opacity: 0;
-    z-index: -10;
+    visibility: hidden;
   }
 }
 @-webkit-keyframes spinner_loader {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
   }
 }
 @keyframes spinner_loader {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes website_loader {
+  0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes website_loader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .background_menu {
@@ -150,7 +162,7 @@
   overflow: hidden;
 }
 .menu .menu_card .menu_text {
-  margin-left: 10px;
+  margin-left: 15px;
   overflow: hidden;
 }
 .menu .menu_card .menu_text h3 {
@@ -181,7 +193,7 @@
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  padding: 20px 5px;
+  padding: 25px 5px;
   margin-right: -55px;
   width: 55px;
   transition: margin-right 0.5s;
@@ -200,13 +212,15 @@
   -webkit-animation: rotate_validation 0.5s ease-out;
           animation: rotate_validation 0.5s ease-out;
 }
-.menu a {
+.menu .btn_gradient {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.menu .btn_gradient a {
   margin: 30px 50px;
-  padding: 15px 60px;
+  padding: 15px 40px;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: -1px 5px 15px -2px #9E9E9E;

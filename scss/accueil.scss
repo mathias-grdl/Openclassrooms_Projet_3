@@ -73,7 +73,7 @@ header {
   #localisation {
     @include d_flex(flex, center, center);
     background-color: #e9e9e9;
-    padding: 20px 0px;
+    padding: 15px 0px;
     font-size: 18px;
 
     i {
@@ -100,14 +100,16 @@ header {
       text-align: center;
     }
 
+    .btn_gradient {
+      @include d_flex(flex, center, center, column);
     a {
-      padding: 17px;
-      margin: 0px 19%;
+      padding: 15px 25px;
       border-radius: 30px;
       background: linear-gradient($color_secondary, $color_primary);
       box-shadow: -1px 5px 15px -2px #9E9E9E;
       color: white;
       font-size: 15px;
+    }
 
       &:hover {
         transform: scale(1.02);
