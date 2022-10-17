@@ -443,6 +443,22 @@ footer nav li a {
     opacity: 1;
   }
 }
+header {
+  display: flex;
+  justify-content: center;
+}
+header h1 {
+  position: relative;
+}
+header h1::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f060";
+  font-weight: 900;
+  position: absolute;
+  font-size: 20px;
+  right: 60vw;
+}
+
 .background_menu {
   background-image: url(../images/restaurants/a_la_francaise.jpg);
   background-size: cover;
@@ -569,7 +585,15 @@ footer nav li a {
   font-size: 15px;
 }
 
+@media screen and (min-width: 485px) {
+  header h1::before {
+    right: 55vw;
+  }
+}
 @media screen and (min-width: 779px) {
+  header h1::before {
+    right: 50vw;
+  }
   #fonctionnement ol {
     flex-direction: row;
     flex-wrap: wrap;

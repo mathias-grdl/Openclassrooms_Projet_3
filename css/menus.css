@@ -102,6 +102,22 @@
     opacity: 1;
   }
 }
+header {
+  display: flex;
+  justify-content: center;
+}
+header h1 {
+  position: relative;
+}
+header h1::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f060";
+  font-weight: 900;
+  position: absolute;
+  font-size: 20px;
+  right: 60vw;
+}
+
 .background_menu {
   background-image: url(../images/restaurants/a_la_francaise.jpg);
   background-size: cover;
@@ -226,4 +242,10 @@
   box-shadow: -1px 5px 15px -2px #9E9E9E;
   color: white;
   font-size: 15px;
+}
+
+@media screen and (min-width: 485px) {
+  header h1::before {
+    right: 55vw;
+  }
 }/*# sourceMappingURL=menus.css.map */

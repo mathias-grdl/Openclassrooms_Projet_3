@@ -2,6 +2,23 @@
 @import "./mixins";
 @import "./animations.scss";
 
+header {
+  display: flex;
+  justify-content: center;
+  
+  h1 { 
+    position: relative;
+    &::before {
+      font-family: "Font Awesome 5 Free"; 
+      content: "\f060";
+      font-weight: 900;
+      position: absolute;
+      font-size: 20px;
+      right: 60vw;
+    }
+  }
+}
+
 .background_menu {
   background-image: url(../images/restaurants/a_la_francaise.jpg);
   background-size: cover;
@@ -130,4 +147,15 @@
     font-size: 15px;
   }
 }
+}
+
+@media screen and (min-width : 485px) {
+  header {   
+    h1 { 
+      &::before {
+        right: 55vw;
+      }
+    }
+  }
+  
 }

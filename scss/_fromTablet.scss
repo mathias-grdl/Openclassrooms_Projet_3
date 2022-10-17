@@ -1,5 +1,13 @@
 @media screen and (min-width: 779px) {
 
+  header {   
+    h1 { 
+      &::before {
+        right: 50vw;
+      }
+    }
+  }
+
   #fonctionnement {
     ol {
       flex-direction: row;
