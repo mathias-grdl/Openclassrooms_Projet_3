@@ -1,6 +1,6 @@
-@import "./_variables";
-@import "./mixins";
-@import "./animations.scss";
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../utils/animations";
 
 header {
   display: flex;
