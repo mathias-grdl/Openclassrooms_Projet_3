@@ -5,16 +5,18 @@
 header {
   display: flex;
   justify-content: center;
-  
-  h1 { 
+
+  h1 {
     position: relative;
-    &::before {
-      font-family: "Font Awesome 5 Free"; 
-      content: "\f060";
-      font-weight: 900;
+  }
+
+  a {
+    i {
       position: absolute;
+      color: $color_black;
       font-size: 20px;
-      right: 60vw;
+      top: 25px;
+      left: 20px;
     }
   }
 }
@@ -64,6 +66,10 @@ header {
     }
   }
 
+  .menu_list {
+    margin-bottom: 50px;
+  }
+
   .menu_card {
     @include d_flex(flex, space-between, center);
     background-color: $color_white;
@@ -78,6 +84,7 @@ header {
     .menu_text {
       margin-left: 15px;
       overflow: hidden;
+
       h3 {
         font-weight: bold;
         font-size: 18px;
@@ -114,6 +121,7 @@ header {
         margin-right: -55px;
         width: 55px;
         transition: margin-right 0.5s;
+
         i::before {
           padding: 5px;
           border: 1px solid $color_green;
@@ -129,6 +137,7 @@ header {
       .menu_card_check {
         margin-right: 0px;
       }
+
       i {
         animation: rotate_validation 0.5s ease-out;
       }
@@ -137,25 +146,15 @@ header {
 
   .btn_gradient {
     @include d_flex(flex, center, center, column);
-  a {
-    margin: 30px 50px;
-    padding: 15px 40px;
-    border-radius: 30px;
-    background: linear-gradient($color_secondary, $color_primary);
-    box-shadow: -1px 5px 15px -2px #9E9E9E;
-    color: white;
-    font-size: 15px;
-  }
-}
-}
 
-@media screen and (min-width : 485px) {
-  header {   
-    h1 { 
-      &::before {
-        right: 55vw;
-      }
+    a {
+      margin-bottom: 50px;
+      padding: 15px 40px;
+      border-radius: 30px;
+      background: linear-gradient($color_secondary, $color_primary);
+      box-shadow: -1px 5px 15px -2px #9E9E9E;
+      color: white;
+      font-size: 15px;
     }
   }
-  
 }

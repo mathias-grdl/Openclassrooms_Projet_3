@@ -272,7 +272,7 @@ header h1 {
 }
 
 #fonctionnement {
-  margin: 40px 30px;
+  margin: 40px 25px;
   counter-reset: pts;
 }
 #fonctionnement ol {
@@ -318,7 +318,7 @@ header h1 {
   margin-left: 25px;
 }
 #restaurants #cards_list_restaurants {
-  margin: 30px 30px;
+  margin: 30px 25px;
 }
 #restaurants #cards_list_restaurants a {
   color: black;
@@ -327,7 +327,7 @@ header h1 {
   background-color: #f2f2f2;
   border-radius: 15px;
   box-shadow: -1px 5px 15px -2px #9E9E9E;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
 }
 #restaurants #cards_list_restaurants a .cards_restaurants:hover {
@@ -450,13 +450,12 @@ header {
 header h1 {
   position: relative;
 }
-header h1::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f060";
-  font-weight: 900;
+header a i {
   position: absolute;
+  color: black;
   font-size: 20px;
-  right: 60vw;
+  top: 25px;
+  left: 20px;
 }
 
 .background_menu {
@@ -503,6 +502,9 @@ header h1::before {
   padding: 0px 20px;
   position: absolute;
   top: 20px;
+}
+.menu .menu_list {
+  margin-bottom: 50px;
 }
 .menu .menu_card {
   display: flex;
@@ -576,7 +578,7 @@ header h1::before {
   flex-direction: column;
 }
 .menu .btn_gradient a {
-  margin: 30px 50px;
+  margin-bottom: 50px;
   padding: 15px 40px;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -585,11 +587,6 @@ header h1::before {
   font-size: 15px;
 }
 
-@media screen and (min-width: 485px) {
-  header h1::before {
-    right: 55vw;
-  }
-}
 @media screen and (min-width: 779px) {
   header h1::before {
     right: 50vw;

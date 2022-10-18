@@ -220,7 +220,7 @@ header h1 {
 }
 
 #fonctionnement {
-  margin: 40px 30px;
+  margin: 40px 25px;
   counter-reset: pts;
 }
 #fonctionnement ol {
@@ -266,7 +266,7 @@ header h1 {
   margin-left: 25px;
 }
 #restaurants #cards_list_restaurants {
-  margin: 30px 30px;
+  margin: 30px 25px;
 }
 #restaurants #cards_list_restaurants a {
   color: black;
@@ -275,7 +275,7 @@ header h1 {
   background-color: #f2f2f2;
   border-radius: 15px;
   box-shadow: -1px 5px 15px -2px #9E9E9E;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
 }
 #restaurants #cards_list_restaurants a .cards_restaurants:hover {
@@ -337,4 +337,4 @@ footer nav li .icons-footer {
 }
 footer nav li a {
   color: white;
-}/*# sourceMappingURL=accueil.css.map */
+}/*# sourceMappingURL=Accueil.css.map */

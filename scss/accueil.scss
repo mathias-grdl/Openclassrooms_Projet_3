@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style-type: none; 
+  list-style-type: none;
   font-family: $text_fonts;
 }
 
@@ -41,19 +41,20 @@ img {
   inset: 0 0 0 0;
   z-index: 2;
   animation: background_loader 1s forwards 2s;
-  transform-origin: top ;
-&::after {
-  content: " ";
-  height: 100px;
-  width: 100px;
-  padding: 20px;
-  border-top: 10px solid $color_primary;
-  border-right: 10px solid $color_secondary;
-  border-bottom: 10px solid $color_green;
-  border-left: 10px solid transparent;
-  border-radius: 50%;
-  animation: spinner_loader 1s linear infinite;
-}
+  transform-origin: top;
+
+  &::after {
+    content: " ";
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    border-top: 10px solid $color_primary;
+    border-right: 10px solid $color_secondary;
+    border-bottom: 10px solid $color_green;
+    border-left: 10px solid transparent;
+    border-radius: 50%;
+    animation: spinner_loader 1s linear infinite;
+  }
 }
 
 body {
@@ -102,14 +103,15 @@ header {
 
     .btn_gradient {
       @include d_flex(flex, center, center, column);
-    a {
-      padding: 15px 25px;
-      border-radius: 30px;
-      background: linear-gradient($color_secondary, $color_primary);
-      box-shadow: -1px 5px 15px -2px #9E9E9E;
-      color: white;
-      font-size: 15px;
-    }
+
+      a {
+        padding: 15px 25px;
+        border-radius: 30px;
+        background: linear-gradient($color_secondary, $color_primary);
+        box-shadow: -1px 5px 15px -2px #9E9E9E;
+        color: white;
+        font-size: 15px;
+      }
 
       &:hover {
         transform: scale(1.02);
@@ -119,7 +121,7 @@ header {
 }
 
 #fonctionnement {
-  margin: 40px 30px;
+  margin: 40px 25px;
   counter-reset: pts; //https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters#:~:text=The%20list%2Ditem%20counter%20can,list%20items%20increment%20or%20decrement.
 
   ol {
@@ -172,7 +174,7 @@ header {
   }
 
   #cards_list_restaurants {
-    margin: 30px 30px;
+    margin: 30px 25px;
 
     a {
       color: black;
@@ -181,7 +183,7 @@ header {
         background-color: #f2f2f2;
         border-radius: 15px;
         box-shadow: -1px 5px 15px -2px #9E9E9E;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         position: relative;
 
         &:hover {
@@ -233,7 +235,7 @@ footer {
   padding: 20px;
 
   h3 {
-   font-family:$logo_and_title_fonts;
+    font-family: $logo_and_title_fonts;
   }
 
   nav {
@@ -252,5 +254,3 @@ footer {
     }
   }
 }
-
-

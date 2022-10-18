@@ -109,13 +109,12 @@ header {
 header h1 {
   position: relative;
 }
-header h1::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f060";
-  font-weight: 900;
+header a i {
   position: absolute;
+  color: black;
   font-size: 20px;
-  right: 60vw;
+  top: 25px;
+  left: 20px;
 }
 
 .background_menu {
@@ -162,6 +161,9 @@ header h1::before {
   padding: 0px 20px;
   position: absolute;
   top: 20px;
+}
+.menu .menu_list {
+  margin-bottom: 50px;
 }
 .menu .menu_card {
   display: flex;
@@ -235,17 +237,11 @@ header h1::before {
   flex-direction: column;
 }
 .menu .btn_gradient a {
-  margin: 30px 50px;
+  margin-bottom: 50px;
   padding: 15px 40px;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: -1px 5px 15px -2px #9E9E9E;
   color: white;
   font-size: 15px;
-}
-
-@media screen and (min-width: 485px) {
-  header h1::before {
-    right: 55vw;
-  }
 }/*# sourceMappingURL=menus.css.map */
