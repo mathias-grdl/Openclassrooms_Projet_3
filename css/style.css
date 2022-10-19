@@ -208,7 +208,7 @@ img {
           animation: spinner_loader 1s linear infinite;
 }
 
-body {
+.loader_background {
   -webkit-animation: website_loader 5s forwards;
           animation: website_loader 5s forwards;
 }
@@ -619,6 +619,7 @@ header a i {
   .menu_list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .menu_list .menu_card {
     display: inline-flex !important;
