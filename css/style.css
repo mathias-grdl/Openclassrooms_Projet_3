@@ -635,6 +635,7 @@ header a i {
   .menu .all_menu {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
   .menu .all_menu .menu_all_parts {
     display: inline-flex;

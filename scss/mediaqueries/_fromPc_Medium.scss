@@ -1,11 +1,11 @@
 @media screen and (min-width: 1440px) {
-// 1920px
 
     .menu {
         margin: -25px 100px 0px;
     .all_menu {
         display: flex;
         justify-content: space-between;
+        align-items: baseline; 
 
         .menu_all_parts {
             display: inline-flex;
