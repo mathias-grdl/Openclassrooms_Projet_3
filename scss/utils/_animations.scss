@@ -43,19 +43,19 @@
         opacity: 0;
         visibility: hidden;
     }
-} 
+}
 
 @keyframes spinner_loader {
 
     0% {
-     transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 
     100% {
-   transform: rotate(360deg);
-   
+        transform: rotate(360deg);
+
     }
-} 
+}
 
 @keyframes website_loader {
     0% {

@@ -40,7 +40,7 @@ img {
   height: 100vh;
   inset: 0 0 0 0;
   z-index: 2;
-  animation: background_loader 1s forwards 2s;
+  animation: background_loader 1s forwards 3s;
   transform-origin: top;
 
   &::after {
@@ -53,12 +53,12 @@ img {
     border-bottom: 10px solid $color_green;
     border-left: 10px solid transparent;
     border-radius: 50%;
-    animation: spinner_loader 1s linear infinite;
+    animation: spinner_loader 0.5s linear infinite;
   }
 }
 
 .loader_background {
-  animation: website_loader 5s forwards;
+  animation: website_loader 3s forwards;
 }
 
 header {
@@ -100,23 +100,23 @@ header {
       margin: 20px 40px 30px;
       text-align: center;
     }
+  }
+}
 
-    .btn_gradient {
-      @include d_flex(flex, center, center, column);
+.btn_gradient {
+  @include d_flex(flex, center, center, column);
 
-      a {
-        padding: 15px 25px;
-        border-radius: 30px;
-        background: linear-gradient($color_secondary, $color_primary);
-        box-shadow: -1px 5px 15px -2px #9E9E9E;
-        color: white;
-        font-size: 15px;
-      }
+  a {
+    padding: 15px 25px;
+    border-radius: 30px;
+    background: linear-gradient($color_secondary, $color_primary);
+    box-shadow: -1px 5px 15px -2px #9E9E9E;
+    color: white;
+    font-size: 15px;
+  }
 
-      &:hover {
-        transform: scale(1.02);
-      }
-    }
+  &:hover {
+    transform: scale(1.02);
   }
 }
 
@@ -217,15 +217,15 @@ header {
             flex-direction: column;
             padding: 10px 15px;
           }
-
-          .fa-heart {
-            &:hover::before {
-              @include anim_heart;
-            }
-          }
         }
       }
     }
+  }
+}
+
+.fa-heart {
+  &:hover::before {
+    @include anim_heart;
   }
 }
 

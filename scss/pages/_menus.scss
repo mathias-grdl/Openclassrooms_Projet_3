@@ -43,12 +43,6 @@ header {
     }
   }
 
-  .fa-heart {
-    &:hover::before {
-      @include anim_heart;
-    }
-  } 
-
   .menu_description {
     p {
       font-size: 18px;
@@ -141,20 +135,6 @@ header {
       i {
         animation: rotate_validation 0.5s ease-out;
       }
-    }
-  }
-
-  .btn_gradient {
-    @include d_flex(flex, center, center, column);
-
-    a {
-      margin-bottom: 50px;
-      padding: 15px 40px;
-      border-radius: 30px;
-      background: linear-gradient($color_secondary, $color_primary);
-      box-shadow: -1px 5px 15px -2px #9E9E9E;
-      color: white;
-      font-size: 15px;
     }
   }
 }
