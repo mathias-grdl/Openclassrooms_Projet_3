@@ -445,10 +445,6 @@ footer nav li a {
     opacity: 1;
   }
 }
-header {
-  display: flex;
-  justify-content: center;
-}
 header h1 {
   position: relative;
 }
