@@ -66,6 +66,7 @@ header {
 
   .menu_card {
     @include d_flex(flex, space-between, center);
+    cursor: pointer;
     background-color: $color_white;
     border-radius: 15px;
     margin: 20px 0px;
@@ -73,7 +74,6 @@ header {
     width: 100%;
     animation: menu 0.8s ease-out;
     overflow: hidden;
-
 
     .menu_text {
       margin-left: 15px;
