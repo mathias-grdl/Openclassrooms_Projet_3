@@ -190,8 +190,8 @@ img {
   height: 100vh;
   inset: 0 0 0 0;
   z-index: 2;
-  -webkit-animation: background_loader 1s forwards 2s;
-          animation: background_loader 1s forwards 2s;
+  -webkit-animation: background_loader 1s forwards 3s;
+          animation: background_loader 1s forwards 3s;
   transform-origin: top;
 }
 .loader::after {
@@ -204,13 +204,13 @@ img {
   border-bottom: 10px solid #99E2D0;
   border-left: 10px solid transparent;
   border-radius: 50%;
-  -webkit-animation: spinner_loader 1s linear infinite;
-          animation: spinner_loader 1s linear infinite;
+  -webkit-animation: spinner_loader 0.5s linear infinite;
+          animation: spinner_loader 0.5s linear infinite;
 }
 
-body {
-  -webkit-animation: website_loader 5s forwards;
-          animation: website_loader 5s forwards;
+.loader_background {
+  -webkit-animation: website_loader 3s forwards;
+          animation: website_loader 3s forwards;
 }
 
 header {
@@ -253,13 +253,14 @@ header h1 {
   margin: 20px 40px 30px;
   text-align: center;
 }
-#search #booking .btn_gradient {
+
+.btn_gradient {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#search #booking .btn_gradient a {
+.btn_gradient a {
   padding: 15px 25px;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -267,7 +268,7 @@ header h1 {
   color: white;
   font-size: 15px;
 }
-#search #booking .btn_gradient:hover {
+.btn_gradient:hover {
   transform: scale(1.02);
 }
 
@@ -360,7 +361,8 @@ header h1 {
   flex-direction: column;
   padding: 10px 15px;
 }
-#restaurants #cards_list_restaurants a .cards_restaurants .all_cards .fa-heart:hover::before {
+
+.fa-heart:hover::before {
   -webkit-animation: heart 0.8s;
           animation: heart 0.8s;
   cursor: pointer;
@@ -443,10 +445,6 @@ footer nav li a {
     opacity: 1;
   }
 }
-header {
-  display: flex;
-  justify-content: center;
-}
 header h1 {
   position: relative;
 }
@@ -481,15 +479,6 @@ header a i {
 .menu .menu_title h2 {
   font-family: "Shrikhand", sans-serif;
 }
-.menu .fa-heart:hover::before {
-  -webkit-animation: heart 0.8s;
-          animation: heart 0.8s;
-  cursor: pointer;
-  font-weight: bold;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .menu .menu_description p {
   font-size: 18px;
   text-transform: uppercase;
@@ -511,6 +500,7 @@ header a i {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
   background-color: white;
   border-radius: 15px;
   margin: 20px 0px;
@@ -571,21 +561,6 @@ header a i {
   -webkit-animation: rotate_validation 0.5s ease-out;
           animation: rotate_validation 0.5s ease-out;
 }
-.menu .btn_gradient {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.menu .btn_gradient a {
-  margin-bottom: 50px;
-  padding: 15px 40px;
-  border-radius: 30px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: -1px 5px 15px -2px #9E9E9E;
-  color: white;
-  font-size: 15px;
-}
 
 @media screen and (min-width: 779px) {
   header h1::before {
@@ -619,6 +594,7 @@ header a i {
   .menu_list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .menu_list .menu_card {
     display: inline-flex !important;
@@ -634,6 +610,7 @@ header a i {
   .menu .all_menu {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
   .menu .all_menu .menu_all_parts {
     display: inline-flex;

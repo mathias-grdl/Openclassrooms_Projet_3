@@ -23,14 +23,13 @@
     }
   }
 
-  // --------------------- LES MENUS ---------------------
-  // --------------------- LES MENUS ---------------------
-  // --------------------- LES MENUS ---------------------
+  // ---LES MENUS ---
 
 
   .menu_list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .menu_card {
       display: inline-flex !important;

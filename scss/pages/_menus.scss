@@ -3,9 +3,6 @@
 @import "../utils/animations";
 
 header {
-  display: flex;
-  justify-content: center;
-
   h1 {
     position: relative;
   }
@@ -43,12 +40,6 @@ header {
     }
   }
 
-  .fa-heart {
-    &:hover::before {
-      @include anim_heart;
-    }
-  }
-
   .menu_description {
     p {
       font-size: 18px;
@@ -72,6 +63,7 @@ header {
 
   .menu_card {
     @include d_flex(flex, space-between, center);
+    cursor: pointer;
     background-color: $color_white;
     border-radius: 15px;
     margin: 20px 0px;
@@ -79,7 +71,6 @@ header {
     width: 100%;
     animation: menu 0.8s ease-out;
     overflow: hidden;
-
 
     .menu_text {
       margin-left: 15px;
@@ -141,20 +132,6 @@ header {
       i {
         animation: rotate_validation 0.5s ease-out;
       }
-    }
-  }
-
-  .btn_gradient {
-    @include d_flex(flex, center, center, column);
-
-    a {
-      margin-bottom: 50px;
-      padding: 15px 40px;
-      border-radius: 30px;
-      background: linear-gradient($color_secondary, $color_primary);
-      box-shadow: -1px 5px 15px -2px #9E9E9E;
-      color: white;
-      font-size: 15px;
     }
   }
 }
