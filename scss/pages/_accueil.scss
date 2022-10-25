@@ -174,7 +174,7 @@ header {
   }
 
   #cards_list_restaurants {
-    margin: 30px 25px;
+    margin: 30px 20px;
 
     a {
       color: black;
@@ -208,7 +208,7 @@ header {
 
         }
 
-        .all_cards {
+        .cards_all {
           @include d_flex(flex, space-between, center);
           margin-right: 15px;
 
@@ -216,6 +216,10 @@ header {
             display: inline-flex;
             flex-direction: column;
             padding: 10px 15px;
+          }
+
+          .fa-heart {
+            margin-top: 15px;
           }
         }
       }
@@ -225,7 +229,13 @@ header {
 
 .fa-heart {
   &:hover::before {
-    @include anim_heart;
+    animation: heart 0.8s;
+    cursor: pointer;
+    font-weight: bold;
+    // dégradé de couleur texte :
+    background: -webkit-linear-gradient($color_primary, $color_secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -244,7 +254,7 @@ footer {
     li {
       padding-bottom: 10px;
 
-      .icons-footer {
+      .footer-icons {
         margin-right: 5px;
       }
 

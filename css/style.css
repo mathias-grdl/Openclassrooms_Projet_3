@@ -319,7 +319,7 @@ header h1 {
   margin-left: 25px;
 }
 #restaurants #cards_list_restaurants {
-  margin: 30px 25px;
+  margin: 30px 20px;
 }
 #restaurants #cards_list_restaurants a {
   color: black;
@@ -349,17 +349,20 @@ header h1 {
   background-color: #99E2D0;
   color: green;
 }
-#restaurants #cards_list_restaurants a .cards_restaurants .all_cards {
+#restaurants #cards_list_restaurants a .cards_restaurants .cards_all {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin-right: 15px;
 }
-#restaurants #cards_list_restaurants a .cards_restaurants .all_cards .cards_text {
+#restaurants #cards_list_restaurants a .cards_restaurants .cards_all .cards_text {
   display: inline-flex;
   flex-direction: column;
   padding: 10px 15px;
+}
+#restaurants #cards_list_restaurants a .cards_restaurants .cards_all .fa-heart {
+  margin-top: 15px;
 }
 
 .fa-heart:hover::before {
@@ -386,7 +389,7 @@ footer nav {
 footer nav li {
   padding-bottom: 10px;
 }
-footer nav li .icons-footer {
+footer nav li .footer-icons {
   margin-right: 5px;
 }
 footer nav li a {
@@ -607,22 +610,22 @@ header a i {
   .menu {
     margin: -25px 100px 0px;
   }
-  .menu .all_menu {
+  .menu .menu_all {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
   }
-  .menu .all_menu .menu_all_parts {
+  .menu .menu_all .menu_all_parts {
     display: inline-flex;
     flex-direction: column;
     min-width: 32%;
     justify-content: space-between;
     margin: 0px 10px;
   }
-  .menu .all_menu .menu_all_parts .menu_list {
+  .menu .menu_all .menu_all_parts .menu_list {
     flex-direction: column;
   }
-  .menu .all_menu .menu_all_parts .menu_list .menu_card {
+  .menu .menu_all .menu_all_parts .menu_list .menu_card {
     min-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
