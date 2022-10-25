@@ -361,6 +361,9 @@ header h1 {
   flex-direction: column;
   padding: 10px 15px;
 }
+#restaurants #cards_list_restaurants a .cards_restaurants .all_cards .fa-heart {
+  margin-top: 15px;
+}
 
 .fa-heart:hover::before {
   -webkit-animation: heart 0.8s;

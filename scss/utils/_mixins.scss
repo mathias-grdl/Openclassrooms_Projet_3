@@ -5,12 +5,3 @@
   flex-direction: $flex_direction;
 }
 
-@mixin anim_heart ($Bclip : text, $Fcolor : transparent) {
-  animation: heart 0.8s;
-  cursor: pointer;
-  font-weight: bold;
-  // dégradé de couleur texte :
-  background: -webkit-linear-gradient($color_primary, $color_secondary);
-  -webkit-background-clip: $Bclip;
-  -webkit-text-fill-color: $Fcolor;
-}

@@ -217,6 +217,10 @@ header {
             flex-direction: column;
             padding: 10px 15px;
           }
+
+          .fa-heart {
+            margin-top: 15px;
+          }
         }
       }
     }
@@ -225,7 +229,13 @@ header {
 
 .fa-heart {
   &:hover::before {
-    @include anim_heart;
+    animation: heart 0.8s;
+    cursor: pointer;
+    font-weight: bold;
+    // dégradé de couleur texte :
+    background: -webkit-linear-gradient($color_primary, $color_secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
