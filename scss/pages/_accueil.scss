@@ -174,7 +174,7 @@ header {
   }
 
   #cards_list_restaurants {
-    margin: 30px 25px;
+    margin: 30px 20px;
 
     a {
       color: black;
@@ -208,7 +208,7 @@ header {
 
         }
 
-        .all_cards {
+        .cards_all {
           @include d_flex(flex, space-between, center);
           margin-right: 15px;
 
