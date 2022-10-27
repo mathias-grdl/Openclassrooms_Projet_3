@@ -1,3 +1,5 @@
+// Apparition du menu
+
 @keyframes menu {
     0% {
         transform: scale(0);
@@ -10,6 +12,7 @@
 }
 
 
+// Check Vert
 @keyframes rotate_validation {
     0% {
         transform: rotate(-270deg);
@@ -20,7 +23,7 @@
     }
 }
 
-
+// Animation du coeur
 @keyframes heart {
     from {
         opacity: 0;
@@ -32,6 +35,7 @@
     }
 }
 
+// Fond blanc
 @keyframes background_loader {
 
     0% {
@@ -44,6 +48,7 @@
     }
 }
 
+// Le loader
 @keyframes spinner_loader {
 
     0% {
@@ -56,6 +61,7 @@
     }
 }
 
+// chargement du site complet
 @keyframes website_loader {
     0% {
         opacity: 0;
@@ -64,4 +70,4 @@
     100% {
         opacity: 1;
     }
-}
+} 
