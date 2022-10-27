@@ -1,16 +1,18 @@
+// Apparition du menu
+
 @keyframes menu {
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
+    0% {
+        transform: scale(0);
 
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0px);
+    100% {
+        transform: scale(1);
     }
 }
 
+
+// Check Vert
 @keyframes rotate_validation {
     0% {
         transform: rotate(-270deg);
@@ -21,7 +23,7 @@
     }
 }
 
-
+// Animation du coeur
 @keyframes heart {
     from {
         opacity: 0;
@@ -33,6 +35,7 @@
     }
 }
 
+// Fond blanc
 @keyframes background_loader {
 
     0% {
@@ -45,6 +48,7 @@
     }
 }
 
+// Le loader
 @keyframes spinner_loader {
 
     0% {
@@ -57,6 +61,7 @@
     }
 }
 
+// chargement du site complet
 @keyframes website_loader {
     0% {
         opacity: 0;
@@ -65,4 +70,4 @@
     100% {
         opacity: 1;
     }
-}
+} 
