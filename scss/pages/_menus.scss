@@ -40,6 +40,8 @@ header {
     }
   }
 
+  .menu_all_parts {}
+
   .menu_description {
     p {
       font-size: 18px;
@@ -57,10 +59,6 @@ header {
     }
   }
 
-  .menu_list {
-    margin-bottom: 50px;
-  }
-
   .menu_card {
     @include d_flex(flex, space-between, center);
     cursor: pointer;
@@ -69,8 +67,14 @@ header {
     margin: 20px 0px;
     box-shadow: 3px 3px 3px rgba(92, 92, 92, 0.582);
     width: 100%;
-    animation: menu 0.8s ease-out;
     overflow: hidden;
+    animation: menu 0.8s both ease-in-out;
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        animation-delay: 0.8s * $i;
+      }
+    }
 
     .menu_text {
       margin-left: 15px;
